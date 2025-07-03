@@ -1,0 +1,135 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    padding: 25px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffd369;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Main Container */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* UI Box */
+.UI {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Labels & Inputs */
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+input:focus {
+    outline: 2px solid #ff6b6b;
+}
+
+/* Instruction */
+.instruction {
+    font-size: 0.85rem;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.Enter {
+    display: flex;
+    justify-content: center;
+}
+
+.Enter button {
+    background: linear-gradient(to right, #ff6b6b, #f06595);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Enter button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #f06595, #ff6b6b);
+}
+
+/* Final Answer Box */
+.FinalAnswer {
+    margin-top: 40px;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffd369;
+    min-width: 280px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .UI, .FinalAnswer {
+        width: 90%;
+    }
+
+    .Enter button {
+        width: 100%;
+    }
+}
